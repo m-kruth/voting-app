@@ -3,12 +3,24 @@
   <head>
     <title>Voting App</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/script.js"></script>
   </head>
   <body>
-    <h1>Food SIG 2nd General Election</h1>
-    <p>Food SIG 2nd General Election</p>
+
+    <form action="http://localhost:3000/vote" method="POST">
+      <div>
+        <label for="say">What greeting do you want to say?</label></br>
+        <input type="radio" name="vote" id="vote" value="fuckface">
+        <label>fuckface</label></br>
+        <input type="radio" name="vote" id="vote" value="dumbhead">
+        <label>dumbhead</label></br>
+      </div>
+      <div>
+        <button>Send my greetings</button>
+      </div>
+    </form>
 
 
-        
+
   </body>
 </html>
