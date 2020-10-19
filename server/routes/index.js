@@ -10,11 +10,13 @@ router.get('/', function(req, res, next) {
 
 router.post('/vote', function(req, res, next) {
   vote = req.body.vote
-  vote2 = req.body.vote2
-  console.log(vote)
-  console.log(vote2)
   db.push(vote)
+  next()
   console.log(db)
 });
+
+router.use('/vote', function(req, res) {
+ res.render ('index', { title: 'GarbDB Votes', db})
+})
 
 module.exports = router;
