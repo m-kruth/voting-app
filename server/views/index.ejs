@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Voting App</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
     <script src="/javascripts/script.js"></script>
   </head>
   <body>
-    <h1>asdjfkk</h1>
-    <form action="http://localhost:3000/vote" method="POST">
-      <div>
-        <label for="say">Who are you voting for?</label></br>
-        <input type="radio" name="vote" id="vote" value="fuckface">
-        <label>fuckface</label></br>
-        <input type="radio" name="vote" id="vote" value="dumbhead">
-        <label>dumbhead</label></br>
-      </div>
-      <div>
-        <label for="say">What greeting do you want to say?</label></br>
-        <input type="radio" name="vote2" id="vote2" value="fuckfasfdsfdce">
-        <label>fasfjkas</label></br>
-        <input type="radio" name="vote2" id="vote2" value="dumbasdfafhead">
-        <label>dasdfasfd</label></br>
-      </div>
-      <div>
-        <button>Send my greetings</button>
-      </div>
-    </form>
-
-
-
-  </body>
+    <h1>General Election Food SIG</h1>
+    <form action="/vote" method="POST">
+       <div>
+        <label class="radio">
+          <input type="radio" name="vote" id="vote" value="Knobhead">
+          Decommission AI Party
+        </label> </br>
+        <label class="radio">
+          <input type="radio" name="vote" id="vote" value="Fuckface">
+          Make Food Sig Great Again Party
+        </label></br>
+        <label class="radio">
+          <input type="radio" name="vote" id="vote" value="Saint">
+           Religious Party
+        </label></br>
+        <label class="radio">
+          <input type="radio" name="vote" id="vote" value="Bot">
+           Useless Coffee Bean and Time Theft Party
+        </label></br>
+        <label class="radio">
+          <input type="radio" name="vote" id="vote" value="Spicehead">
+           Spreadsheet Platform Engineer Party
+        </label></br>
+       <div class="form-actions">
+         <button type="submit" class="btn btn-primary">Submit My Vote!</button></br>
+         <a href="https://www.quotev.com/quiz/12530453/What-Type-Of-Idiot-Are-You" class="btn btn-info">I am a Dumbfuck! Need help</a></br>
+         <button type="reset" class="btn btn-danger">This Resets, YOU IDIOT!</button>
+       </div>
+   </div>
+  </form>
+ </body>
 </html>
